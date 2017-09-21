@@ -1,0 +1,41 @@
+/* Empty. Add your own CSS if you like */
+#top,
+#bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50%;
+}
+
+#top {
+    top: 0;
+    background-color: orange;
+}
+
+#bottom {
+    bottom: 0;
+    background-color: green;
+}
+
+
+.routeFinderBack {
+  background-color: #000000;
+
+}
+
+h2, h3, p {
+  text-align: center;
+  color: white;
+}
+
+.ComingSoon {
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+html{
+  height: 100%;
+}

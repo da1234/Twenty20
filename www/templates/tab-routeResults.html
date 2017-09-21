@@ -1,0 +1,22 @@
+<ion-view view-title="RouteFinder">
+  <ion-content>
+    <div>
+
+    
+    
+    </div>
+    <div class="routeFinderBack">
+    <h2>Safest route</h2>
+    <h3>Summary : {{bestRouteInfo.name}}</h3>
+    <h3>Time : {{bestRouteInfo.time}}</h3>
+    <h3>Directions : </h3>
+    <ion-list class="">
+      <ion-item ng-repeat="leg in bestRouteInfo.legs" type="item-text-wrap" style= "color:positive">
+        <p>
+          {{leg.narrative}}
+        </p>
+      </ion-item>
+    </ion-list>
+  </div>
+  </ion-content>
+</ion-view>

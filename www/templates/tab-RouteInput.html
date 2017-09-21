@@ -1,0 +1,27 @@
+<ion-view view-title="RouteFinder">
+  <ion-content>
+    <div> </div>
+    <div class="routeInputBack">
+    <form ng-submit="SearchRoute(locations)">
+
+
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" placeholder="Starting Postcode" ng-model="locations.startLoc">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Destination Postcode" ng-model="locations.endLoc">
+      </label>
+
+      <button class="button button-block button-positive" type="submit" href ="#/tab-routeResults.html">
+          Search for the safest route 
+      </button>
+    </div>
+
+
+
+    </form>
+  </div>
+  </ion-content>
+</ion-view>

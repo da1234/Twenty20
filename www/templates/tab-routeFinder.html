@@ -1,0 +1,33 @@
+<ion-view view-title="RouteFinder">
+  <ion-content>
+    <div class="routeFinderBack">
+      <br>
+    <form id="RouteForm" ng-submit="SearchRoute(locations)" ng-show="showForm = true">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Starting postcode" ng-model="locations.startLoc">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Destination postcode" ng-model="locations.endLoc">
+        </label>
+      <button class="button button-block button-positive" type="submit" ng-click="showResultsFunc();">
+        Search
+      </button>
+    </div>
+    </form>
+    <div ng-show="showResults">
+      <h2>Safest route</h2>
+      <h3>Summary : {{bestRouteInfo.name}}</h3>
+      <h3>Time : {{bestRouteInfo.time}}</h3>
+      <h3>Directions : </h3>
+      <ion-list>
+        <ion-item ng-repeat="leg in bestRouteInfo.legs" type="item-text-wrap">
+          <p>
+            {{leg.narrative}}
+          </p>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+  </ion-content>
+</ion-view>
